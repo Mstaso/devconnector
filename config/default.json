@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://malcolm123:Soccer12@devconnector.tvexx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://malcolm123:Soccer12@devconnector.tvexx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
 }
