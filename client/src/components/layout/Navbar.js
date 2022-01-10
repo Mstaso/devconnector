@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
 
 export const Navbar = ({ auth: { isAuthenticated, loading }, logout}) => {
+
   const authLinks = (
     <ul>
-    <li><a onClick={logout} href='#!' >
+    <li><a onClick={ logout } href='#!' >
       {/* <i className="fas fa-sign-out-alt"></i> */}
       {' '}
       <span className="hide-sm">Logout</span>
@@ -26,6 +27,7 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout}) => {
     return (
         <nav className="navbar bg-dark">
       <h1>
+        {/* add icon */}
         <Link to='/'><i className="fas fa-code"></i> DevConnector</Link>
       </h1>
     { !loading && (<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)}
